@@ -1,0 +1,27 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "EmployeeForm";
+}
+
+<h1>Employee Form</h1>
+
+<form asp-controller="Home" asp-action="DisplayEmployee">
+    <input type="number" asp-for="@Model.EmpId" placeholder="Employee ID" />
+    <span asp-validation-for="@Model.EmpId" class="text-danger"></span>
+    <br/>
+    <br />
+    <input type="text" asp-for="@Model.FirstName" placeholder="FirstName" />
+    <span asp-validation-for="@Model.FirstName" class="text-danger"></span>
+    <br />
+    <br />
+    <input type="text" asp-for="@Model.LastName" placeholder="LastName" />
+    <span asp-validation-for="@Model.LastName" class="text-danger"></span>
+    <br />
+    <br />
+    <input type="number" asp-for="@Model.Salary" placeholder="Salary" />
+    <span asp-validation-for="@Model.Salary" class="text-danger"></span>
+    <br />
+    <br />
+    <input type="Submit" />
+</form>
+

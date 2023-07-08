@@ -1,0 +1,21 @@
+﻿@model Employee
+@{
+    ViewData["Title"] = "DisplayEmployee";
+}
+
+<h1>DisplayEmployee</h1>
+
+<table>
+    <tr>
+        <th>EmpId</th>
+        <td>@Model.EmpId</td>
+    </tr>
+    <tr>
+        <th>Name</th>
+        <td>@Model.FirstName @Model.LastName</td>
+    </tr>
+    <tr>
+        <th>Salary</th>
+        <td>@Model.Salary</td>
+    </tr>
+</table>
